@@ -38,6 +38,6 @@ Para implementar este módulo en un entorno, puede ser invocado declarando la ru
 
 ```hcl
 module "redes" {
-  source       = "github.com/Ignaciov1/terraform-aws-vpc-AUY1105-grupo-3"
+  source       = "[github.com/Ignaciov1/terraform-aws-vpc-AUY1105-grupo-3](https://github.com/Ignaciov1/terraform-aws-vpc-AUY1105-grupo-3)"
   lab_role_arn = "arn:aws:iam::123456789012:role/LabRole"
 }
