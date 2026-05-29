@@ -2,6 +2,10 @@
 
 Todas las modificaciones notables de este proyecto serán documentadas en este archivo de acuerdo con el estándar de Versionado Semántico (SemVer).
 
+## [0.1.2] - 2026-05-28
+### Fixed
+- Corrección de sintaxis HCL en el bloque de ejemplo del `README.md` (eliminación de hipervínculo markdown para evitar errores de compilación).
+
 ## [0.1.1] - 2026-05-28
 ### Fixed
 - Actualización de la documentación en el `README.md` para incluir el usuario de GitHub correcto en el bloque de código de ejemplo de uso.
