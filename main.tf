@@ -115,26 +115,26 @@ resource "aws_nat_gateway" "nat_gw" {
 }
 
 # 5. Grupos de Seguridad (Traído de sg-group.tf)
-resource "aws_security_group" "ssh_access" {
-  name        = "ssh-access"
-  description = "Permitir acceso SSH restringido"
-  vpc_id      = aws_vpc.mi_vpc.id
-
-  ingress {
-    description = "SSH desde mi IP segura"
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    cidr_blocks = [var.my_ip]
-  }
-
-  egress {
-    description = "Salida restringida HTTPS"
-    from_port   = 443
-    to_port     = 443
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  tags = { Name = "ssh-access" }
-}
+#resource "aws_security_group" "ssh_access" {
+#  name        = "ssh-access"
+#  description = "Permitir acceso SSH restringido"
+#  vpc_id      = aws_vpc.mi_vpc.id
+#
+#  ingress {
+#    description = "SSH desde mi IP segura"
+#    from_port   = 22
+#    to_port     = 22
+#    protocol    = "tcp"
+#    cidr_blocks = [var.my_ip]
+#  }
+#
+#  egress {
+#    description = "Salida restringida HTTPS"
+#    from_port   = 443
+#    to_port     = 443
+#    protocol    = "tcp"
+#    cidr_blocks = ["0.0.0.0/0"]
+#  }
+#
+#  tags = { Name = "ssh-access" }
+#}
