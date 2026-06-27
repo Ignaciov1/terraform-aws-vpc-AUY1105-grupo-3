@@ -8,7 +8,6 @@ output "public_subnet_1_id" {
   value       = aws_subnet.subnet_publica_1.id
 }
 
-output "security_group_ssh_id" {
-  description = "El ID del Security Group para SSH"
-  value       = aws_security_group.ssh_access.id
+output "id_sg_ssh" {
+  value = aws_security_group.ssh_access.id
 }
